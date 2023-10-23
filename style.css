@@ -182,16 +182,6 @@ video {
     user-select: none;
 }
 
-font-family: 'Montserrat', sans-serif;
-font-size: 25px;
-font-weight: 700;
-color: white;
-margin-top: 0;
-margin-bottom: 0;
-margin-left: 7%;
-margin-right: auto;
-text-align: start;
-
 .subnick {
     font-family: 'Arial', sans-serif; 
     font-size: 16px;
@@ -280,7 +270,9 @@ text-align: start;
 }
 
 .social-button:hover {
-    background-color: red; 
+    background-color: rgb(149, 149, 149); 
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(27, 27, 27, 0.5);
 }
 
 .social-icon {
