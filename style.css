@@ -270,7 +270,9 @@ video {
 }
 
 .social-button:hover {
-    background-color: red; 
+    background-color: rgb(135, 135, 135); 
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(27, 27, 27, 0.5);
 }
 
 .social-icon {
