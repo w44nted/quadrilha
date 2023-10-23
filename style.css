@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400&amp;display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #36393F;
+    
+}
+
+.all {
+
+    display: inline-block;
+ justify-content: center;
+    align-items: center;
+}
+
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+
+
+@media (max-width: 768px) {
+    body {
+
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .avatar:focus {
+        outline: none;
+        -webkit-tap-highlight-color: transparent; 
+    }
+}
+
+.discord-profile {
+    
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.4);
+    color: #FFFFFF;
+    position: relative;
+    margin: 25px;
+    max-width: 400px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+
+
+.profile-cover {
+    width: 100%;
+    height: 200px;
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: -100px;
+    left: 0;
+    z-index: -1;
+}
+
+.avatar1 {
+    width: 150px;
+    height: 150px;
+    background-image: url('wanted.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    border: 5px solid #444;
+    cursor: pointer;
+}
+
+.avatar2 {
+    width: 150px;
+    height: 150px;
+    background-image: url('encapetado.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    border: 5px solid #444;
+    cursor: pointer;
+}
+
+.avatar3 {
+    width: 150px;
+    height: 150px;
+    background-image: url('guina.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    border: 5px solid #444;
+    cursor: pointer;
+}
+
+.avatar4 {
+    width: 150px;
+    height: 150px;
+    background-image: url('kawe.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    border: 5px solid #444;
+    cursor: pointer;
+}
+
+
+.avatars {
+    width: 150px;
+    height: 150px;
+    background-image: url('blood.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    border: 5px solid #444;
+    cursor: pointer;
+}
+
+.avatard {
+    width: 150px;
+    height: 150px;
+    background-image: url('https://cdn.discordapp.com/avatars/135626558667882496/b06d409ef1a56ef24be86944d3647448.webp?size=4096');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    border: 5px solid #444;
+    cursor: pointer;
+}
+.avatar:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+.avatars:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.nick {
+    font-family: 'Arial', sans-serif; 
+    font-size: 24px;
+    font-weight: bold; 
+    margin: 0 0 -9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.nickr {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 29px;
+    font-weight: bold; 
+    margin: 0 0 -9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.subnick {
+    font-family: 'Arial', sans-serif; 
+    font-size: 16px;
+    opacity: 0.7;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+.badges {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.badge {
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+    border-radius: 50%;
+
+    position: relative;
+}
+
+.badge[data-tooltip] {
+    position: relative;
+    cursor: pointer;
+}
+
+.badge[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    background-color: #444;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 1;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-family: 'Arial', sans-serif;
+}
+
+.badge[data-tooltip]:hover::after {
+    opacity: 1;
+}
+
+.badge,
+.social-button,
+.subnick {
+    margin-top: 10px;
+}
+
+.social-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-button {
+    margin: 0 10px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-button:hover {
+    background-color: red; 
+}
+
+.social-icon {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.server-button {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.server-button-text {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-left: 10px;
+    cursor: default;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+audio {
+    controls autoplay style="background: none; border: none; width: 100%;";
+}audio {
+    controls autoplay style="background: none; border: none; width: 100%;";
+}
+.discord-profilee {
+    
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.4);
+    color: #FFFFFF;
+    position: relative;
+    margin: 25px;
+    max-width: 400px;
+    height: 350px;
+    background-color: #000000;
+}
+
+
+.social-buttonss {
+    align-items: center;
+    justify-content: center;
+}
+
+.social-buttonn {
+    margin: 10px 10px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-buttonn:hover {
+    background-color: red; 
+}
+
+.social-iconn {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.server-buttonn {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.server-buttonn-text {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-left: 10px;
+    cursor: default;
+    align-items: center;
+    justify-content: center;
+}
+
+.userss {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: beige;
+    margin: 10px -110px 10px 10px;
+}
