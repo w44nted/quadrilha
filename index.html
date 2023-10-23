@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title class="blinking-title">gangstar</title>
+    <title class="blinking-title">quadrilha do pix</title>
     <link rel="icon" href="./media.discordapp.net/attachments/1118382359721562273/1154252961267060786/Joker-icon.png" type="image/png">
     <meta property="og:image" content="https://cdn.discordapp.com/attachments/1116888195330736152/1138881306013475038/58b11ff8d495ac5a07575d65a528c0d7-numero-ocidental-traco-sombra-7.png">
     <meta property="og:title" content="quadrilha do pix" />
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="main.css">
+    <script src="js/blocker.js"></script>
     <script src="js/cursor.js"></script>
 
     <script>
@@ -100,10 +101,10 @@
             
                     <div class="social-buttons">
 
-                        <a href="https://www.instagram.com/ygnxarthur/" target="_blank" class="social-button">
+                        <a href="https://www.instagram.com/guinaa2k24/" target="_blank" class="social-button">
                             <i class="fab fa-instagram social-icon"></i>
                         </a>
-                        <a href="https://discord.gg/houst" target="_blank" class="social-button">
+                        <a href="https://discord.gg/quiksilver" target="_blank" class="social-button">
                             <i class="fab fa-discord social-icon"></i>
                         </a>
                       
@@ -136,10 +137,10 @@
         
                 <div class="social-buttons">
 
-                    <a href="https://www.instagram.com/furyyzn/" target="_blank" class="social-button">
+                    <a href="https://www.instagram.com/cheidodio.121/" target="_blank" class="social-button">
                         <i class="fab fa-instagram social-icon"></i>
                     </a>
-                    <a href="https://discord.gg/houst" target="_blank" class="social-button">
+                    <a href="https://discord.gg/quiksilver" target="_blank" class="social-button">
                         <i class="fab fa-discord social-icon"></i>
 
                     </a>
@@ -176,10 +177,10 @@
     
             <div class="social-buttons">
 
-                <a href="https://www.instagram.com/ianzx_7" target="_blank" class="social-button">
+                <a href="https://www.instagram.com/hahaha" target="_blank" class="social-button">
                     <i class="fab fa-instagram social-icon"></i>
                 </a>
-                <a href="https://discord.gg/houst" target="_blank" class="social-button">
+                <a href="https://discord.gg/quiksilver" target="_blank" class="social-button">
                     <i class="fab fa-discord social-icon"></i>
 
                 </a>
@@ -197,3 +198,41 @@
 
 
 </html>
+
+<script>
+    var rev = "fwd";
+    function titlebar(val) {
+      var msg = "quadrilha do pix";
+      var res = " ";
+      var speed = 150;
+      var pos = val;
+      msg = "" + msg + "";
+      var le = msg.length;
+      if (rev == "fwd") {
+        if (pos < le) {
+          pos = pos + 1;
+          scroll = msg.substr(0, pos);
+          document.title = scroll;
+          timer = window.setTimeout("titlebar(" + pos + ")", speed);
+        }
+        else {
+          rev = "bwd";
+          timer = window.setTimeout("titlebar(" + pos + ")", speed);
+        }
+      }
+      else {
+        if (pos > 0) {
+          pos = pos - 1;
+          var ale = le - pos;
+          scrol = msg.substr(ale, le);
+          document.title = scrol;
+          timer = window.setTimeout("titlebar(" + pos + ")", speed);
+        }
+        else {
+          rev = "fwd";
+          timer = window.setTimeout("titlebar(" + pos + ")", speed);
+        }
+      }
+    }
+    titlebar(0);
+  </script>
